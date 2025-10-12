@@ -1,0 +1,17 @@
+[
+    {
+        "task": "Write a Python function to list all the AWS services available in a specific AWS region.",
+        "format": "python",
+        "solution_criteria": "The function should use the AWS SDK for Python (Boto3) to retrieve the list of available services in the specified region and return it as a list."
+    },
+    {
+        "task": "Create a JSON object that represents an AWS Lambda function configuration, including the function name, runtime, handler, and memory size.",
+        "format": "json",
+        "solution_criteria": "The JSON object should include the necessary properties to define an AWS Lambda function, such as 'FunctionName', 'Runtime', 'Handler', and 'MemorySize'."
+    },
+    {
+        "task": "Write a regular expression to validate an AWS S3 bucket name.",
+        "format": "regex",
+        "solution_criteria": "The regular expression should ensure that the bucket name is between 3 and 63 characters long, starts and ends with a lowercase letter or number, and contains only lowercase letters, numbers, and hyphens."
+    }
+]

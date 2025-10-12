@@ -1,0 +1,52 @@
+[
+  {
+    "output": "[\"Renaissance art\", \"humanism\", \"classical learning\", \"artistic techniques\", \"perspective\", \"anatomical accuracy\", \"oil painting\", \"artistic philosophy\", \"social status of artists\", \"art patronage\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The Renaissance marked a pivotal transformation in European artistic expression, fundamentally intertwined with humanism's revival of classical learning. In Florence, this manifested through revolutionary techniques in perspective and anatomical accuracy, while Northern European artists like van Eyck developed oil painting methods that enabled unprecedented naturalistic detail. These technical innovations reflected deeper philosophical shifts, as artists increasingly viewed their work as intellectual rather than purely mechanical labor, elevating their social status and reshaping patronage relationships with the merchant class and church authorities."
+      },
+      "solution_criteria": [
+        "Identifies major art historical movements/periods mentioned",
+        "Captures key technical developments in art",
+        "Includes broader cultural/philosophical themes"
+      ],
+      "task_description": "Extract topics out of a passage of text from scholarly article into a JSON array of strings",
+      "scenario": "Test with a humanities passage containing subtle, interrelated themes about art history and cultural movements that requires distinguishing between main topics versus supporting details"
+    },
+    "score": 10,
+    "reasoning": "The solution meets all mandatory requirements by providing a valid JSON array of topic strings without commentary. It comprehensively covers the key themes from the passage including artistic movements, technical developments, and cultural/philosophical aspects. The topics are clearly and concisely stated."
+  },
+  {
+    "output": "[\"quantum dot synthesis\", \"optoelectronic devices\", \"hot-injection method\", \"photoluminescence\", \"carrier mobility\", \"field-effect transistors\", \"trap densities\", \"hybrid perovskite solar cells\", \"power conversion efficiency\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in quantum dot synthesis have enabled significant improvements in optoelectronic device performance. Using a novel hot-injection method with precise temperature control, we synthesized PbS quantum dots with narrow size distribution (\u03c3 < 5%) and high photoluminescence quantum yield (>85%). The optimized dots exhibited enhanced carrier mobility (0.12 cm\u00b2/Vs) when incorporated into field-effect transistors, while maintaining deep-level trap densities below 10\u00b9\u2076 cm\u207b\u00b3. Integration of these quantum dots into hybrid perovskite solar cells resulted in a 22% increase in power conversion efficiency compared to reference devices."
+      },
+      "solution_criteria": [
+        "Extracts core technical topics (e.g. quantum dots, synthesis methods, device applications)",
+        "Identifies key research areas without getting caught in specific measurements/numbers",
+        "Captures both materials and applications mentioned"
+      ],
+      "task_description": "Extract topics out of a passage of text from scholarly article into a JSON array of strings",
+      "scenario": "Test with a dense scientific abstract containing multiple technical terms, methodology descriptions, and research findings to verify accurate topic extraction without getting lost in jargon"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements by providing a clean JSON array of topic strings. It successfully extracts the key technical concepts, research areas, and applications while avoiding specific measurements. The topics are clear and focused. While the topics could potentially be split further, the current groupings are reasonable and maintain clarity."
+  },
+  {
+    "output": "[\"consumer behavior\", \"economic downturns\", \"loss aversion\", \"spending habits\", \"purchasing patterns\", \"brain imaging\", \"amygdala\", \"neural responses\", \"financial uncertainty\", \"economic decision-making\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent research examining consumer behavior during economic downturns reveals fascinating psychological patterns. Analysis of purchasing data from the 2008-2009 recession demonstrates that loss aversion tendencies significantly impact spending habits, with consumers showing heightened sensitivity to perceived value. Brain imaging studies indicate increased activation in the amygdala - the region associated with emotional processing - when participants evaluate prices during periods of financial uncertainty, suggesting an intricate relationship between economic decision-making and neural threat responses."
+      },
+      "solution_criteria": [
+        "Identifies topics from both economics and psychology domains",
+        "Captures both high-level themes and specific technical concepts"
+      ],
+      "task_description": "Extract topics out of a passage of text from scholarly article into a JSON array of strings",
+      "scenario": "Test with a cross-disciplinary passage that mixes topics from different fields (e.g. economics and psychology) to ensure the model can identify distinct topics even when they appear in an integrated discussion"
+    },
+    "score": 9,
+    "reasoning": "Solution meets all mandatory formatting requirements and effectively captures the interdisciplinary nature of the content, identifying both economic topics (e.g. 'economic downturns', 'spending habits') and psychological/neuroscience concepts (e.g. 'amygdala', 'neural responses'). The topics are cleanly extracted without commentary."
+  }
+]
